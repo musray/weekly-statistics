@@ -1,8 +1,8 @@
-import React from 'react'
-import ReactDOM from 'react-dom'
-import DayEntry from './DayEntry'
+import React from 'react';
+import ReactDOM from 'react-dom';
+import TeamApp from './TeamApp';
 
 ReactDOM.render(
-    <DayEntry txt="提交申报"/>,
+    <TeamApp />,
     document.getElementById('root')
 );
