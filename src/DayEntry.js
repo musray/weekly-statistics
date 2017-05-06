@@ -46,7 +46,7 @@ class Task extends React.Component{
                 </select>
                 <textarea name="description" cols="30" rows="10"/>
                 <input type="text"/>
-                <button onClick={() => props.remove(props.task.id)}>
+                <button onClick={(props) => props.remove(props.task.id)}>
                     删除
                 </button>
             </div>

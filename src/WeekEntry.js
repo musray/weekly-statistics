@@ -16,8 +16,7 @@ class WeekEntry extends React.Component {
         return (
             <form onSubmit={this.handleSubmit.bind(this)}>
                 <DayEntry
-                    title="mon"
-                    value={this.state.data}/>
+                    title="mon"/>
                 {/*<DayEntry title="tue"/>*/}
                 {/*<DayEntry title="wen"/>*/}
                 {/*<DayEntry title="thu"/>*/}
