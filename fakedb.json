@@ -1,0 +1,32 @@
+{
+  "staff1": [
+    {
+      "project": "project1",
+      "task": "Wiring Diagram",
+      "description": "",
+      "workHour": 5,
+      "date": 20170508
+    },
+    {
+      "project": "project1",
+      "task": "Wiring Diagram",
+      "description": "",
+      "workHour": 3,
+      "date": 20170508
+    },
+    {
+      "project": "project2",
+      "task": "Assemble",
+      "description": "",
+      "workHour": 8,
+      "date": 20170509
+    },
+    {
+      "project": "other",
+      "task": "福利发放",
+      "description": "为大家领取并发放端午节福利",
+      "workHour": 3,
+      "date": 20170509
+    }
+  ]
+}
