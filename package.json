@@ -10,6 +10,7 @@
     "redux-form": "^6.7.0"
   },
   "devDependencies": {
+    "babel-cli": "^6.24.1",
     "react-scripts": "0.9.5"
   },
   "scripts": {
