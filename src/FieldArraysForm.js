@@ -1,5 +1,6 @@
 import React from 'react';
 import { Field, FieldArray, reduxForm } from 'redux-form';
+import { getLastWeek } from './utilities/dateUtility';
 
 
 // const renderHobbies = ({fields, meta: {error}}) => (
@@ -90,6 +91,8 @@ const renderMembers = ({fields, meta: {touched, error, submitFailed}}) => {
 
 const FieldArraysForm = props => {
     const { handleSubmit, pristine, reset, submitting } = props;
+    const daysOfWeek = getLastWeek();
+
     return (
         <form onSubmit={handleSubmit}>
             {/*<Field*/}
@@ -99,7 +102,7 @@ const FieldArraysForm = props => {
                 {/*label="周一"*/}
             {/*/>*/}
             <div>
-                <label>周一</label>
+                <label>周一 <span>{daysOfWeek[0].toLocaleDateString()}</span></label>
                 <FieldArray
                     name="monday"
                     component={renderMembers}
@@ -107,7 +110,7 @@ const FieldArraysForm = props => {
                 />
             </div>
             <div>
-                <label>周二</label>
+                <label>周二 <span>{daysOfWeek[1].toLocaleDateString()}</span></label>
                 <FieldArray
                     name="tuesday"
                     component={renderMembers}
@@ -115,7 +118,7 @@ const FieldArraysForm = props => {
                 />
             </div>
             <div>
-                <label>周三</label>
+                <label>周三 <span>{daysOfWeek[2].toLocaleDateString()}</span></label>
                 <FieldArray
                     name="wednesday"
                     component={renderMembers}
@@ -123,7 +126,7 @@ const FieldArraysForm = props => {
                 />
             </div>
             <div>
-                <label>周四</label>
+                <label>周四 <span>{daysOfWeek[3].toLocaleDateString()}</span></label>
                 <FieldArray
                     name="thursday"
                     component={renderMembers}
@@ -131,7 +134,7 @@ const FieldArraysForm = props => {
                 />
             </div>
             <div>
-                <label>周五</label>
+                <label>周五 <span>{daysOfWeek[4].toLocaleDateString()}</span></label>
                 <FieldArray
                     name="friday"
                     component={renderMembers}
@@ -139,7 +142,7 @@ const FieldArraysForm = props => {
                 />
             </div>
             <div>
-                <label>周六</label>
+                <label>周六 <span>{daysOfWeek[5].toLocaleDateString()}</span></label>
                 <FieldArray
                     name="saturday"
                     component={renderMembers}
@@ -147,7 +150,7 @@ const FieldArraysForm = props => {
                 />
             </div>
             <div>
-                <label>周日</label>
+                <label>周日 <span>{daysOfWeek[6].toLocaleDateString()}</span></label>
                 <FieldArray
                     name="sunday"
                     component={renderMembers}
