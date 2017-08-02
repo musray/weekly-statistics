@@ -1,6 +1,7 @@
 import React from 'react';
 import { Field, FieldArray, reduxForm } from 'redux-form';
 import { getLastWeek } from './utilities/dateUtility';
+import $ from 'jquery';
 
 
 // const renderHobbies = ({fields, meta: {error}}) => (
